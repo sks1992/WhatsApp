@@ -1,0 +1,102 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/size_16dp"
+    android:paddingTop="@dimen/size_16dp"
+    android:paddingRight="@dimen/size_16dp"
+    android:paddingBottom="@dimen/size_16dp">
+
+
+    <TextView
+        android:id="@+id/tvVerify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/green"
+        android:textSize="@dimen/size_22sp"
+        android:textStyle="bold"
+        tools:text="@string/Verify" />
+
+
+    <TextView
+        android:id="@+id/tvWaiting"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/size_16dp"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center"
+        android:padding="@dimen/size_8dp"
+        android:text="@string/waiting_to_automatically_detect_an_sms_sent_to"
+        android:textSize="@dimen/size_17sp" />
+
+
+    <TextView
+        android:id="@+id/tvCountry"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:padding="@dimen/size_4dp"
+        android:textSize="@dimen/size_16sp" />
+
+    <EditText
+        android:id="@+id/etSentCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_16dp"
+        android:imeActionId="6"
+        android:imeActionLabel="Send"
+        android:textColor="@color/black"
+        android:imeOptions="actionUnspecified"
+        android:inputType="phone"
+        android:letterSpacing="0.8"
+        android:maxLines="1"
+        android:maxLength="6"
+        android:hint="@string/spaces"
+        android:padding="@dimen/size_10dp"
+        android:singleLine="true"
+        android:textAlignment="center"
+        android:textSize="@dimen/size_24sp"
+        android:importantForAutofill="no" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/size_4dp"
+        android:textColor="@color/black"
+        android:text="@string/enter_6_digit_code"
+        android:textSize="@dimen/size_16sp" />
+
+    <Button
+        android:id="@+id/btnVerification"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_12dp"
+        android:padding="@dimen/size_15dp"
+        android:text="@string/send_verification_code"
+        android:textAllCaps="true"
+        android:textColor="@color/pink"
+        android:textSize="@dimen/size_16sp"
+        app:cornerRadius="@dimen/size_5dp" />
+
+    <Button
+        android:id="@+id/btnResend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_12dp"
+        android:enabled="false"
+        android:gravity="center"
+        android:padding="@dimen/size_15dp"
+        android:text="@string/resend_sms"
+        android:textColor="@color/pink"
+        android:textSize="@dimen/size_16sp"
+        app:cornerRadius="5dp" />
+
+
+</LinearLayout>

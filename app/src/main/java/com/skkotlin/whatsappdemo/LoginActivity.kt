@@ -1,6 +1,7 @@
 package com.skkotlin.whatsappdemo
 
 import android.content.Context
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Message
@@ -31,7 +32,7 @@ class LoginActivity : AppCompatActivity() {
         }
     }
 
-    //function is either number is valid or not
+    //function for -> either number is valid or not
     private fun checkedNumber() {
 
         countryCode = ccPicker.selectedCountryCodeWithPlus
@@ -72,9 +73,13 @@ class LoginActivity : AppCompatActivity() {
             show()
         }
     }
-
+//Start OtpActivity
     private fun showOtpActivity() {
-
+        startActivity(
+            Intent(this, OtpActivity::class.java).putExtra(PHONE_NUMBER, phoneNumber)
+        )
+        //call finish so activity remove from backStack
+        finish()
     }
 
 }

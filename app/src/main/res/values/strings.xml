@@ -4,4 +4,11 @@
     <string name="welcome_to_whatsapp">Welcome To WhatsApp</string>
     <string name="verify_your_number">Verify Your Number</string>
     <string name="please_enter_your_mobile_number_you_will_get_a_sms_including_a_verification_code">Please enter your mobile number.You will get a SMS including a verification code.</string>
+    <string name="Verify">Verify +919582054664</string>
+    <string name="waiting_to_automatically_detect_an_sms_sent_to">Waiting to automatically detect an SMS sent to</string>
+    <string name="spaces">------</string>
+    <string name="enter_6_digit_code">Enter 6-digit code</string>
+    <string name="send_verification_code">send verification code</string>
+    <string name="resend_sms">Resend SMS</string>
+    <string name="verify_num">Verify %s</string>
 </resources>
