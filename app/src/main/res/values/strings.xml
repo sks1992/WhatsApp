@@ -11,4 +11,5 @@
     <string name="send_verification_code">send verification code</string>
     <string name="resend_sms">Resend SMS</string>
     <string name="verify_num">Verify %s</string>
+    <string name="waiting_text">Waiting to automatically detect an SMS sent to\n %s Wrong Number?</string>
 </resources>
